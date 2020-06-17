@@ -33,6 +33,38 @@ public class ExemploList {
         nomes.set(2, "Carol");
         System.out.println(nomes);
 
+        // Metodo remove - posicao da lista
+        //nomes.remove(4);
+        //System.out.println(nomes);
+
+        // Metodo remove - objeto da lista
+        //nomes.remove("Carol");
+        //System.out.println(nomes);
+
+        // Metodo get, retorna o elemento dado no qual passamos para variavel
+        String nome = nomes.get(1);
+        System.out.println(nome);
+
+        // Para sabermos o tamanho da nossa lista
+        int tamanho = nomes.size();
+        System.out.println(tamanho);
+
+        // Retorna um boolean, verifica se um elemento existe na lista
+        boolean temAna = nomes.contains("Ana");
+        System.out.println(temAna);
+        boolean temJoao = nomes.contains("Flavia");
+        System.out.println(temJoao);
+
+        // Verificar se a lista esta vazia
+        boolean listaEstaVazi = nomes.isEmpty();
+        System.out.println(listaEstaVazi);
+
+        // Limpa nossa lista
+        //nomes.clear();
+
+        // IndexOf retorna qual é a posicao do elemento da lista, caso nao exista retorna -1
+        int posicaoLarissa = nomes.indexOf("Larissa");
+        System.out.println(posicaoLarissa);
 
     }
 }
