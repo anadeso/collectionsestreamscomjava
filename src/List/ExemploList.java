@@ -2,6 +2,7 @@ package List;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class ExemploList {
@@ -65,6 +66,19 @@ public class ExemploList {
         // IndexOf retorna qual é a posicao do elemento da lista, caso nao exista retorna -1
         int posicaoLarissa = nomes.indexOf("Larissa");
         System.out.println(posicaoLarissa);
+
+
+        // Navegando em nossa lista pelo forEach
+        for (String nomeDoItem : nomes) {
+            System.out.println("-->" +nomeDoItem);
+        }
+
+        // Outra forma para navegarmos em nossa lista usando o Iterator
+        Iterator<String> iterator = nomes.iterator();
+
+        while (iterator.hasNext()){
+            System.out.println("---->" +iterator.next());
+        }
 
     }
 }
