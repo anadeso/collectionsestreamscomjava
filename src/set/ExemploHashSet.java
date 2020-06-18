@@ -30,16 +30,18 @@ public class ExemploHashSet {
         // Retorna a quantidade de itens do set
         System.out.println(notasAlunos.size());
 
-        // Navega em todos os itens do iterator
-        Iterator<Double> iterator = notasAlunos.iterator();
 
-        while (iterator.hasNext()){
-            System.out.println(notasAlunos.size());
+        // Navega em todos os itens do iterator
+
+        Iterator<Double> iterators = notasAlunos.iterator();
+
+        while (iterators.hasNext()){
+            System.out.println(iterators.next());
         }
+
         for (Double nota : notasAlunos){
             System.out.println(nota);
         }
-
         //notasAlunos.clear();
 
 
