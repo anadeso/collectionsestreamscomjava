@@ -8,7 +8,6 @@ import java.util.List;
 public class ExemploList {
 
     public static void main(String[] args) {
-
         // Para usar uma Lista a primeira coisa é instancia-la
 
         List<String>  nomes = new ArrayList<>();
@@ -76,8 +75,8 @@ public class ExemploList {
         // Outra forma para navegarmos em nossa lista usando o Iterator
         Iterator<String> iterator = nomes.iterator();
 
-        while (iterator.hasNext()){
-            System.out.println("---->" +iterator.next());
+        while (iterator.hasNext()) {
+            System.out.println("---->" + iterator.next());
         }
 
     }
