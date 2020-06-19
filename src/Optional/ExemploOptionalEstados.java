@@ -18,7 +18,7 @@ public class ExemploOptionalEstados {
 
         Optional<String> emptyOptional = Optional.empty();
 
-        System.out.println(("Valor opcional que nao esta presente");
+        System.out.println("Valor opcional que nao esta presente");
         emptyOptional.ifPresentOrElse(System.out::println, () -> System.out.println("empty = nao esta presente"));
 
         Optional<String> optionalNullErro = Optional.of(null);
